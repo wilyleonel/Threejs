@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papelazo a Jefatura</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <div id="hud">
+        <div id="scorePanel">
+          <div id="score">Puntos: 0</div>
+          <div id="scoreboard"></div>
+        </div>
+        <div id="lives">❤️❤️❤️</div>
+      </div>
+
+      <div id="toast"></div>
+
+      <div id="hint">Apunta con el mouse y haz click para tirar el papel. ¡No lo hagas cuando el jefe te mire!</div>
+
+      <div id="gameover" class="hidden">
+        <h1>¡Te despidieron!</h1>
+        <p id="finalScore">Puntos: 0</p>
+        <button id="restartBtn">Reintentar</button>
+      </div>
+
+      <div id="nameScreen">
+        <div id="nameCard">
+          <h1>Papelazo a Jefatura</h1>
+          <p class="subtitle">Ponle nombre a tu jefe y a tus compañeros antes de empezar.</p>
+
+          <label class="field">
+            <span>Nombre del jefe</span>
+            <input id="bossNameInput" type="text" placeholder="Jefe" maxlength="16" />
+          </label>
+
+          <div id="devNameInputs" class="dev-grid"></div>
+
+          <button id="startBtn">Empezar a tirar papelitos</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
